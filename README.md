@@ -30,28 +30,6 @@ All models are trained in Jupyter notebooks following a **train → test → eva
 
 ---
 
-## 🚀 Quick Start
-
-```bash
-# Clone the repository
-git clone https://github.com/ahmedayad0168/cottonil-HVIA
-cd cottonil-ai
-
-# Create virtual environment
-python -m venv .venv
-source .venv/bin/activate  # Windows: .venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run the app
-python app.py
-```
-
-The app opens at `http://127.0.0.1:7860` with pre-trained demo models.
-
----
-
 ## 🌐 Live Demo
 
 > **[Click here to try the live demo](https://huggingface.co/spaces/YOUR_USERNAME/cottonil-ai-hub)**
@@ -129,6 +107,27 @@ cottonil-ai/
     ├── 01_CATALOG/           # Product catalog
     └── 02_TABLES/             # Main data tables
 ```
+---
+
+## 🚀 Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/ahmedayad0168/cottonil-HVIA
+cd cottonil-ai
+
+# Create virtual environment
+python -m venv .venv
+source .venv/bin/activate  # Windows: .venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the app
+python app.py
+```
+
+The app opens at `http://127.0.0.1:7860` with pre-trained demo models.
 
 ---
 
