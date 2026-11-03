@@ -1,0 +1,8 @@
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+.pytest_cache/
+# your confidential data never goes to git / HF
+COTTONIL_Data/*
+!COTTONIL_Data/README.md
+data/synthetic/

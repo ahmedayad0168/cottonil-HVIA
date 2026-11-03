@@ -1,0 +1,54 @@
+{
+  "model": "01_demand_forecast",
+  "data_source": "real",
+  "trained_at": "2026-11-03T06:17:16+00:00",
+  "test_wape_by_horizon": {
+    "1": 0.6444,
+    "2": 0.6484,
+    "3": 0.6507,
+    "4": 0.6494
+  },
+  "best_baseline_wape_by_horizon": {
+    "1": 0.7286,
+    "2": 0.7288,
+    "3": 0.7285,
+    "4": 0.7271
+  },
+  "aggregated_wape": {
+    "1": {
+      "branch x week": 0.283,
+      "category x week": 0.095,
+      "network x week": 0.031
+    },
+    "2": {
+      "branch x week": 0.286,
+      "category x week": 0.096,
+      "network x week": 0.026
+    },
+    "3": {
+      "branch x week": 0.287,
+      "category x week": 0.098,
+      "network x week": 0.028
+    },
+    "4": {
+      "branch x week": 0.286,
+      "category x week": 0.097,
+      "network x week": 0.026
+    }
+  },
+  "interval_coverage": {
+    "1": 0.8720552884615385,
+    "2": 0.8716346153846154,
+    "3": 0.8690504807692307,
+    "4": 0.8667067307692308
+  },
+  "n_series": 1280,
+  "n_weeks": 417,
+  "as_of_week": "2026-10-12",
+  "best_iter": {
+    "1": 45,
+    "2": 55,
+    "3": 60,
+    "4": 71
+  }
+}

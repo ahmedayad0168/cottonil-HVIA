@@ -1,0 +1,32 @@
+{
+  "model": {
+    "ROC-AUC": 0.4986,
+    "PR-AUC": 0.0221,
+    "Brier": 0.0218,
+    "precision@thr": 0.0159,
+    "recall@thr": 0.0667,
+    "alerts": 1194.0
+  },
+  "data_source": "real",
+  "trained_at": "2026-11-03T06:17:33+00:00",
+  "test_base_rate": 0.022265625,
+  "threshold": 0.027812878643120605,
+  "persistence_baseline": {
+    "ROC-AUC": 0.5368,
+    "PR-AUC": 0.0259,
+    "Brier": 0.1274,
+    "precision@thr": 0.0391,
+    "recall@thr": 0.0386,
+    "alerts": 281.0
+  },
+  "n_alerts_latest": 104,
+  "plan_actions": {
+    "OVERSTOCK": 1009,
+    "OK": 145,
+    "RESTOCK": 108,
+    "URGENT": 18
+  },
+  "plan_units": 8012,
+  "plan_transport_cost_egp": 38215.0,
+  "latest_month": "2026-10"
+}

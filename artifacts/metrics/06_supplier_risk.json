@@ -1,0 +1,27 @@
+{
+  "model": {
+    "ROC-AUC": 0.5155,
+    "PR-AUC": 0.342,
+    "Brier": 0.222,
+    "alerts@0.40": 0.0,
+    "precision@0.40": NaN,
+    "recall@0.40": 0.0
+  },
+  "data_source": "real",
+  "trained_at": "2026-11-03T06:19:38+00:00",
+  "test_partial_rate": 0.3328750981932443,
+  "baseline": {
+    "ROC-AUC": 0.4996,
+    "PR-AUC": 0.3274,
+    "Brier": 0.2225,
+    "alerts@0.40": 0.0,
+    "precision@0.40": NaN,
+    "recall@0.40": 0.0
+  },
+  "lead_time_mae": {
+    "model": 11.056,
+    "baseline: material-type median": 12.079,
+    "baseline: global median": 12.092
+  },
+  "median_ci_width": 0.06258589284806382
+}

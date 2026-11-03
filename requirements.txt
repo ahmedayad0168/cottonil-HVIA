@@ -1,0 +1,10 @@
+# --- runtime (the app / Hugging Face Space) ---
+# scikit-learn is PINNED: the shipped .joblib model files were written by this exact version.
+# (If you retrain with scripts/run_all_notebooks.py on your machine you may use any recent version.)
+gradio>=6.0,<7
+plotly>=5.20
+pandas>=2.2
+numpy>=1.26
+scipy>=1.11
+scikit-learn==1.8.0
+joblib>=1.3

@@ -1,0 +1,24 @@
+{
+  "model": {
+    "ROC-AUC": 0.6363,
+    "PR-AUC": 0.042,
+    "Brier": 0.024,
+    "lift top 5%": 2.4375,
+    "returns captured in top 10%": 0.221
+  },
+  "data_source": "real",
+  "trained_at": "2026-11-03T06:19:26+00:00",
+  "test_return_rate": 0.024798163099029703,
+  "baseline": {
+    "ROC-AUC": 0.4991,
+    "PR-AUC": 0.0251,
+    "Brier": 0.0242,
+    "lift top 5%": 1.159,
+    "returns captured in top 10%": 0.1075
+  },
+  "auc_gain": 0.13724345150330347,
+  "verdict": "MODEST EXTRA SIGNAL - usable to prioritise manual checks (top 5-10% of lines), not for hard rules.",
+  "top5_threshold": 0.052165458835350946,
+  "refunds_egp": 13914504.34,
+  "returns": 28500
+}

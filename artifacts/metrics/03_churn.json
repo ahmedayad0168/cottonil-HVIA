@@ -1,0 +1,28 @@
+{
+  "model": {
+    "ROC-AUC": 0.4983,
+    "PR-AUC": 0.7133,
+    "Brier (lower=better)": 0.2048,
+    "Top-decile lift": 0.9963
+  },
+  "data_source": "real",
+  "trained_at": "2026-11-03T06:18:25+00:00",
+  "test_base_rate": 0.7142723580191767,
+  "baseline_logit": {
+    "ROC-AUC": 0.4978,
+    "PR-AUC": 0.7143,
+    "Brier (lower=better)": 0.2064,
+    "Top-decile lift": 1.0033
+  },
+  "n_scored": 74660,
+  "n_active": 51597,
+  "avg_p_churn_active": 0.7051451875686113,
+  "value_at_risk_m": 167.49382687561547,
+  "gap_quantiles_days": {
+    "0.5": 147.0,
+    "0.75": 314.0,
+    "0.9": 536.0,
+    "0.95": 703.0
+  },
+  "anonymous_share": 0.19066851851851851
+}

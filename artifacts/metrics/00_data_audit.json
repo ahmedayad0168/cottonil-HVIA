@@ -1,0 +1,97 @@
+{
+  "model": "00_data_audit",
+  "data_source": "real",
+  "trained_at": "2026-11-03T06:16:10+00:00",
+  "kpis": {
+    "orders": 540000,
+    "lines": 1138536,
+    "units": 3398655,
+    "revenue_egp": 841274176.3199999,
+    "gross_margin_egp": 322558299.5,
+    "gross_margin_pct": 0.38341638027090325,
+    "aov_egp": 1557.9151413333332,
+    "items_per_order": 2.1084,
+    "single_item_share": 0.320387037037037,
+    "anonymous_share": 0.19066851851851851,
+    "customers": 85000,
+    "branches": 80,
+    "return_rate_orders": 0.05277777777777778,
+    "refunds_egp": 13914504.34,
+    "first_date": "2018-10-19",
+    "last_date": "2026-10-18"
+  },
+  "data_quality": [
+    {
+      "check": "sales_order_id unique",
+      "status": "PASS",
+      "detail": "0 duplicates"
+    },
+    {
+      "check": "sales_line_id unique",
+      "status": "PASS",
+      "detail": "0 duplicates"
+    },
+    {
+      "check": "every line belongs to an order",
+      "status": "PASS",
+      "detail": "0 orphan lines"
+    },
+    {
+      "check": "items_count == number of lines",
+      "status": "PASS",
+      "detail": "0 orders differ"
+    },
+    {
+      "check": "net = gross - discount",
+      "status": "PASS",
+      "detail": "0 rows off by >0.05"
+    },
+    {
+      "check": "paid = net + tax",
+      "status": "PASS",
+      "detail": "0 rows off by >0.05"
+    },
+    {
+      "check": "margin = net - qty*cost",
+      "status": "PASS",
+      "detail": "0 rows off by >0.05"
+    },
+    {
+      "check": "every return points to a real line",
+      "status": "PASS",
+      "detail": "0 orphan returns"
+    },
+    {
+      "check": "no non-positive prices/quantities",
+      "status": "PASS",
+      "detail": ""
+    },
+    {
+      "check": "returns happen on/after the sale date",
+      "status": "PASS",
+      "detail": "0 returns dated before their order"
+    },
+    {
+      "check": "anonymous orders (customer_id null)",
+      "status": "WARN",
+      "detail": "19.1% of orders have no customer  -> CRM blind spot"
+    },
+    {
+      "check": "marketing attributed orders <= ledger orders",
+      "status": "WARN",
+      "detail": "campaigns claim 24,106,747 orders vs 540,000 in the sales ledger (45x)  -> use channel *efficiency ranking*, not absolute counts"
+    },
+    {
+      "check": "partial-receipt PO rate",
+      "status": "WARN",
+      "detail": "33.0% of POs arrive partially"
+    },
+    {
+      "check": "line-level return rate",
+      "status": "PASS",
+      "detail": "2.50% of sales lines have a return record"
+    }
+  ],
+  "n_pass": 11,
+  "n_warn": 3
+}

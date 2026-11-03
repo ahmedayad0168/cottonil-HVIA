@@ -1,0 +1,64 @@
+{
+  "model": "07_marketing",
+  "data_source": "real",
+  "trained_at": "2026-11-03T06:19:50+00:00",
+  "holdout_r2": {
+    "Google Ads": 0.318,
+    "In-store": 0.213,
+    "Influencers": 0.412,
+    "Meta Ads": 0.489,
+    "Outdoor": 0.323,
+    "SMS / CRM": 0.345
+  },
+  "beta": {
+    "Google Ads": {
+      "beta": 0.961,
+      "ci_low": 0.832,
+      "ci_high": 1.092,
+      "interpretation": "~linear (cannot tell)"
+    },
+    "In-store": {
+      "beta": 0.937,
+      "ci_low": 0.815,
+      "ci_high": 1.071,
+      "interpretation": "~linear (cannot tell)"
+    },
+    "Influencers": {
+      "beta": 0.954,
+      "ci_low": 0.849,
+      "ci_high": 1.067,
+      "interpretation": "~linear (cannot tell)"
+    },
+    "Meta Ads": {
+      "beta": 1.087,
+      "ci_low": 0.989,
+      "ci_high": 1.195,
+      "interpretation": "~linear (cannot tell)"
+    },
+    "Outdoor": {
+      "beta": 0.891,
+      "ci_low": 0.777,
+      "ci_high": 1.008,
+      "interpretation": "~linear (cannot tell)"
+    },
+    "SMS / CRM": {
+      "beta": 0.957,
+      "ci_low": 0.824,
+      "ci_high": 1.12,
+      "interpretation": "~linear (cannot tell)"
+    }
+  },
+  "optimiser_lift": 0.05949250237403336,
+  "lift_p5": 0.0020708940572692906,
+  "lift_p95": 0.11780762449512029,
+  "p_lift_positive": 0.9566666666666667,
+  "alloc_change_pct": {
+    "Google Ads": 50.0,
+    "In-store": 50.0,
+    "Influencers": -36.0,
+    "Meta Ads": 50.0,
+    "Outdoor": -50.0,
+    "SMS / CRM": -50.0
+  },
+  "caveat": "attributed orders are platform-reported and far exceed ledger orders; only relative efficiency is trusted"
+}
